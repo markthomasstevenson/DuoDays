@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DuoDays</string>
+    <string name="content_list_fragment_label">Content List Fragment</string>
+    <string name="add_content_fragment_label">Add Content Fragment</string>
+
+    <string name="content_list_title">DUoDAYS</string>
+    <string name="no_results">No Content Available :(\nTry using the button to add content.</string>
+    <string name="add_content_title_hint">Title</string>
+    <string name="add_content_content_hint">Content</string>
+    <string name="upload">Upload</string>
+    <string name="edit_text_empty">A value must be entered</string>
+    <string name="content_add_title">Add Content</string>
+</resources>

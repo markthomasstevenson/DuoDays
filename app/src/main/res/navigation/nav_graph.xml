@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ContentListFragment">
+
+    <fragment
+        android:id="@+id/ContentListFragment"
+        android:name="uk.co.qiiq.duodays.ContentListFragment"
+        android:label="@string/content_list_fragment_label"
+        tools:layout="@layout/fragment_content_list">
+
+        <action
+            android:id="@+id/action_ContentListFragment_to_AddContentFragment"
+            app:destination="@id/AddContentFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddContentFragment"
+        android:name="uk.co.qiiq.duodays.AddContentFragment"
+        android:label="@string/add_content_fragment_label"
+        tools:layout="@layout/fragment_add_content">
+
+        <action
+            android:id="@+id/action_AddContentFragment_to_ContentListFragment"
+            app:popUpTo="@id/ContentListFragment" />
+    </fragment>
+</navigation>
